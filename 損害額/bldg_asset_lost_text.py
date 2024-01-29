@@ -142,3 +142,4 @@ while pref <= int(finish_pref):
     damage_output_path = f'./dev/建物家財損害額/{pref}_lost.csv'
     df.to_csv(damage_output_path, index=False)
     pref += 1
+    #1/29コミット
