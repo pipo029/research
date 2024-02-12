@@ -60,7 +60,7 @@ while pref <= int(finish_pref):
     dmg_price_list = []
 
     #工事費用
-    df['cost'] = np.where(df['estimated_structure'] == 0, cost_df['wood'][pref] * 1000, cost_df['steel'][pref] * 1000)
+    df['cost'] = np.where(df['estimated_structure'] == 0, cost_df['wood'][pref-1] * 1000, cost_df['steel'][pref-1] * 1000)
     #償却率
     df['dpc_rate'] = np.where(df['estimated_structure'] == 0, 0.031, 0.036)
     #築年数
